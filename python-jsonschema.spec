@@ -35,14 +35,6 @@ Provides:	python-jsonschema = %{version}-%{release}
 jsonschema is JSON Schema validator currently based on
 http://tools.ietf.org/html/draft-zyp-json-schema-03
 
-%package -n python3-%{pypi_name}
-Summary:	An implementation of JSON Schema validation for Python 3
-Group:		Development/Python
-
-%description -n python3-%{pypi_name}
-jsonschema is JSON Schema validator currently based on
-http://tools.ietf.org/html/draft-zyp-json-schema-03
-
 %prep
 %setup -q -n %{pypi_name}-%{version}
 %autopatch -p1
