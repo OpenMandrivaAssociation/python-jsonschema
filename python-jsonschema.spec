@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:	3.1.1
-Release:	1
+Release:	2
 Summary:        An implementation of JSON Schema validation for Python
 Group:          Development/Python
 License:        MIT
