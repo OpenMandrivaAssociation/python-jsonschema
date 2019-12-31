@@ -2,13 +2,13 @@
 %global pypi_name jsonschema
 
 Name:           python-%{pypi_name}
-Version:	3.1.1
-Release:	2
+Version:	3.2.0
+Release:	1
 Summary:        An implementation of JSON Schema validation for Python
 Group:          Development/Python
 License:        MIT
 URL:            https://pypi.python.org/pypi/jsonschema
-Source0:	https://files.pythonhosted.org/packages/43/52/0a4dabd8d42efe6bb039d61731cb20a73d5425e29be16a7a2003b923e542/jsonschema-3.1.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/69/11/a69e2a3c01b324a77d3a7c0570faa372e8448b666300c4117a516f8b1212/jsonschema-3.2.0.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  pkgconfig(python2)
