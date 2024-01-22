@@ -1,5 +1,5 @@
 Name:		python-jsonschema
-Version:	4.20.0
+Version:	4.21.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/j/jsonschema/jsonschema-%{version}.tar.gz
 Summary:	An implementation of JSON Schema validation for Python
@@ -19,9 +19,16 @@ An implementation of JSON Schema validation for Python
 
 %prep
 %autosetup -p1 -n jsonschema-%{version}
+
+# Requires a checkout of the JSON-Schema-Test-Suite
+# https://github.com/json-schema-org/JSON-Schema-Test-Suite
+rm jsonschema/tests/test_jsonschema_test_suite.py
+
 # SCM version detection seems to be broken
 echo "__version__='%{version}'" >VERSION.py
 sed -i -e 's,source = "vcs",path = "VERSION.py",' pyproject.toml
+
+#----------------------------------------------------------------------
 
 %build
 %py_build
