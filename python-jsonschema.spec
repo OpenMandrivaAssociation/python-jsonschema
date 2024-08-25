@@ -1,5 +1,5 @@
 Name:		python-jsonschema
-Version:	4.21.1
+Version:	4.23.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/j/jsonschema/jsonschema-%{version}.tar.gz
 Summary:	An implementation of JSON Schema validation for Python
