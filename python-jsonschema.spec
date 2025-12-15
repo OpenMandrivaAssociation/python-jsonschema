@@ -2,6 +2,7 @@ Name:		python-jsonschema
 Version:	4.25.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/j/jsonschema/jsonschema-%{version}.tar.gz
+Patch0:   remove-bogus-rpds-py-dep.patch
 Summary:	An implementation of JSON Schema validation for Python
 URL:		https://pypi.org/project/jsonschema/
 License:	MIT
