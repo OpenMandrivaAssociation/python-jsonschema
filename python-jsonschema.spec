@@ -2,7 +2,7 @@
 
 Name:		python-jsonschema
 Version:	4.26.0
-Release:	1
+Release:	2
 Summary:	An implementation of JSON Schema validation for Python
 License:	MIT
 Group:		Development/Python
@@ -26,6 +26,9 @@ An implementation of JSON Schema validation for Python
 # Requires a checkout of the JSON-Schema-Test-Suite
 # https://github.com/json-schema-org/JSON-Schema-Test-Suite
 rm jsonschema/tests/test_jsonschema_test_suite.py
+
+%build -p
+export SETUPTOOLS_SCM_PRETEND_VERSION="%{version}"
 
 %files
 %{_bindir}/%{module}
